@@ -7,7 +7,7 @@
 
         color: blue;       
     } 
-    h2 span{color: gold;}
+    h2 span{color:lightblue;}
     
     
     img{
@@ -17,72 +17,95 @@
 
         }
         
-    h1{
-        text-align: center;
-    }
-#sp{text-align: center;}
+   
+#ec{
+    width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+}
 
-    h5{text-align: center;}
+#fav,
+        #class,
+        #assignments {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;}
+            
+            #fav {
+             float: left;
+            width: 40%;
+        }
+#labs{
+    float: right;
+    width: 50%;
+}
+        #class {
+            float: right;
+            width: 50%;
+        }
+
+        #assignments {
+            display: flex;
+            align-items: flex-end;
+            width: 100%;}
+
+
+
         </style>
     <title>
 Abdulrahman Sadiq | Student Page    </title>
 </head>
-
+<div id="ec">
 <body> 
-    <h1>
-Abdulrahman Sadiq  </h1>
-<p id="sp">Student Page -  <a href="mailto:aasadiq@usc.edu">Aasadiq@usc.edu</a> </p>
-</p>
-
-<!-- comment niceeeee -->
-
-<p>
 
 
+    <div id="container">
 
-</p>
-<h2>
-    Favorite Color:
-    
-    <strong> <em>Blue</em> </strong></h2>
+        <h1>Abdulrahman Sadiq</h1>
+        <p id="sp">Student Page - <a href="mailto:aasadiq@usc.edu">Aasadiq@usc.edu</a></p>
+        <hr>
 
-<p> 
-    Favorite Website: <a href="https://www.youtube.com" target="_blank"> Youtube Website</a> </p>
+        <div id="fav">
+            <h2>Favorite Color: <span>Blue</span></h2>
+            <p>Favorite Website: <a href="https://www.youtube.com" target="_blank">Youtube Website</a></p>
+            <p>Favorite Activity:</p>
+            <img src="https://media.self.com/photos/57d8840846d0cb351c8c4aa4/master/pass/usainbolt.jpg"
+                alt="Photo of person running">
+        </div>
 
-<p> 
-    Favorite Activity: </p>
-    <img src="https://media.self.com/photos/57d8840846d0cb351c8c4aa4/master/pass/usainbolt.jpg" alt=" Photo of person running">
+        <div id="class">
+            <p>Spring 2024 Schedule:</p>
+            <ul>
+                <li>ITP 104 | Introduction to Web Development</li>
+                <li>CSCI 102 | Fundamentals of Computation</li>
+                <li>ECON 351 | Microeconomics for Business</li>
+                <li>BUAD 102 | Global Leadership Seminar</li>
+                <li>BUAD 304 | Organizational Behavior and Leadership</li>
+            </ul>
+        </div>
 
+        <div id="assignments">
+            <div id="assignment">
+                <p>Assignments:</p>
+                <ul>
+                    <li><a href="assignment_01/assignment_01.html">Assignment 1</a></li>
+                    <li><a href="assignment_02/assignment_02.html">Assignment 2</a></li>
+                </ul>
+            </div>
 
+            <div id="labs">
+                <p>Labs:</p>
+                <ul>
+                    <li><a href="index.html">Lab 2: Student Page</a></li>
+                    <li><a href="Lab_03/assignment_01.html">Lab 3: Updated Resume</a></li>
+                </ul>
+            </div>
+        </div>
 
-<p> Spring 2024 Schedule:</p>
-
-<ul>
-<li> ITP 104 |  Introduction to Web Development </li>
-
-<li> CSCI 102 | Fundamentals of Computation </li>
-<li> ECON 351 | Microeconomics for Business </li>
-<li> BUAD 102 | Global Leadership Seminar</li>
-<li> BUAD 304 | Organizational Behavior and Leadership</li>
-
-
-
-
-</ul>
-<hr>
-<p>Assignments:</p>
-<ul>
-<li> <a href="assignment_01/assignment_01.html" > Assignment 1</a> </li> 
-<li><a href="assignment_02/assignment_02.html" > Assignment 2</a>  </li>
-</ul>
-
-<p>Labs:</p>
-<ul> 
-<li> <a href="index.html">Lab 2: Student Page </a> </li>
-<li> <a href="Lab_03/assignment_01.html">Lab 3: Updated Resume </a> </li>
-</ul>
-
-
+    </div>
 
 </body>
+</div>
 </html>
