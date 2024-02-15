@@ -1,71 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<title>Student Interest Page | ITP</title>
 	<style>
+		#left {
+			background-color: lightcyan;
+			width: 300px;
+		}
 		h2 { color: darkblue}
 
-			
 
-		
+		#right {
+			background-color: white;
+			width: 650px;
+			padding-left: 10px;
+		}
 
+		#footer {
+    background-color:rgb(70, 101, 63) ;
+    text-align:center;
+	line-height:40px;
 
-		
-		#wrapper{
+		}
+		#wrapper {
+			background-color: lightblue;
 			display: flex;
 			justify-content: center;
-			background-color: lightblue;
+			/* text-align: center; */
+			/* margin-right: auto;
+			margin-left: auto;
+			width: 500px; */
+
 		}
-#left {
-  width: 300px;
-  background-color: lightcyan;
-}
-
-#right {
-  width: 700px;}
-
-
 		#header{ 
 
 
-        background-image: url("best.webp");
+background-image: url("best.webp");
+color: white;
+background-position: center;
 
-        background-size: cover;
-        background-position: center;
-		color: white;
-		text-align: center;
-		line-height: 500px;
-		text-shadow: 0px 0px 10px #000;
-			/* horizontal displacement - vertical displacement - blurrinesss*/
-			/* css is for styly, html is for content*/
-
-		
-		}
-		#main{
-
-		background-color: white;
-		width: 600px;
-		margin-left: auto;
-		margin-right: auto;
-		/* solid - dashed - dotted borders*/
-		/* to center any width on a page margin left and right*/
-
-		padding: 15px;
-		}
-
-		#footer{
-
-		    height:40px;
-    background-color:rgb(70, 101, 63) ;
-    text-align:center;
-    font-family: 'Segoe UI';
-    font: 18px;
-    color:rgb(14, 40, 14);
-    line-height:40px;
-		
-
-		}
+text-align: center;
+line-height: 500px;
+text-shadow: 0px 0px 10px #000; }
 		#ben{
 		width: 400px;
 		padding: 1px;
@@ -85,49 +61,46 @@
 		float: right;
 
 		}
-		
-		#imagess{
-
-			width: 350px;
-		padding: 1px;
-		margin: 9px;
+		h2{
+			text-align: center;
 		}
+		#imagess{
+text-align: center;	
+		width: 85%;
+		padding: 5%;
+		}
+	
 		
 	</style>
-
 </head>
 <body>
-	
-<div id="header">
-	<h1> The World's Most Beautiful Beaches
-	</h1>
-</div>
+	<div id="header">
+		<h1> The World's Most Beautiful Beaches
+		</h1>
+	</div>
+	<div id="wrapper">
+		<div id="left" style="text-align: center;">
+			<h2>  Honorable Mentions
+			</h2>
+		<img id="imagess" src="img_assignment2/headerphoto.avif" alt="photo of beach">
+		  "Seychelles"
+		 <img id="imagess" src="img_assignment2/headerrr1.avif" alt ="picc of beach">
+		 "Abu Dhabi"
+		 <img id="imagess" src="img_assignment2/caymanislands.webp" alt=" caymanislands">
+		"Caymans"
+		<img id="imagess" src="img_assignment2/brazil.webp" alt=" brazil">
+		"Brazil"
+		<img id="imagess" src="img_assignment2/maharashtra.jpeg" alt=" Malta">
+		"Malta"
+		<img id="imagess" src="img_assignment2/portugal.webp" alt=" portugal">
+		"Portugal"
+		<img id="imagess" src="img_assignment2/lanikai-beach-hawaii.jpg" alt=" hawaii">
+			"Hawaii"
+		</div> <!-- #left -->
 
-	<div id="wrapper"> 
-	<div id="left">
+		<div id="right">
 
-
-	<h2> Honorable Mentions
-	</h2>
-<img id="imagess" src="img_assignment2/headerphoto.avif" alt="photo of beach">
- "Seychelles"
- <img id="imagess" src="img_assignment2/headerrr1.avif" alt ="picc of beach">
- "Abu Dhabi"
- <img id="imagess" src="img_assignment2/caymanislands.webp" alt=" caymanislands">
-"Caymans"
-<img id="imagess" src="img_assignment2/brazil.webp" alt=" brazil">
-"Brazil"
-<img id="imagess" src="img_assignment2/maharashtra.jpeg" alt=" Malta">
-"Malta"
-<img id="imagess" src="img_assignment2/portugal.webp" alt=" portugal">
-"Portugal"
-
-</div>
-
-<div id="right">
-
-<div id="main">
-	<h2>Benguerra Island, Mozambique</h2>
+			<h2>Benguerra Island, Mozambique</h2>
 <img id="ben" src="img_assignment2/ben.webp" alt="Benguerra island">
 	<p id="paragraph-highlight"> Cast away in the protected Bazaruto Archipelago off the coast of southern Mozambique, Benguerra is a place where sandbars shimmer like nacre and leggy flamingoes pick their way delicately through the channels. A short sail by dhow east of the town of Vilanculos, the fine sand here is fringed by a two-mile-long coral reef, while migrating humpbacks and huge whale sharks pass majestically further offshore. The shot-silk waters are also home to the largest dugong population in the western Indian Ocean, and inland you’ll find congregations of crocodiles and all manner of bird species. </p><p> This exclusive status ensures that the island remains a pristine sanctuary, with only a handful of carefully selected lodges dotting its picturesque landscape.
 
@@ -156,17 +129,12 @@
 <p>For more information, watch <a href="https://www.youtube.com/watch?v=WOfcwkqgV44&pp=ygUMYmVzdCBiZWFjaGVz" target="_blank"> Best Beaches In The World</a>.</p>
 	
 
-</div>
-</div>
-</div>
+		</div> <!-- #right -->
+	</div> <!-- #wrapper -->
 
-<div id="footer"> 
-
-	University of Southern California &copy; 2018	
-	
-</div>
-	
-
+	<div id="footer">
+		University of Southern California &copy; 2018	
+		</div> <!-- #footer -->
 
 </body>
 </html>
