@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>Abdulrahman Sadiq | Image Puzzle</title>
+		<style>
+			h1 {
+				text-align: center;
+			}
+			.clearfloat {
+			clear: both;
+			}
+			#images {
+				width: 450px;
+				margin-left: auto;
+				margin-right: auto;
+				padding-bottom: 100px;
+               
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				width: 600px; /* Adjust as needed */
+				margin: 0 auto;
+				padding-bottom: 100px;
+			
+			}
+			.img-container {
+				width: 222px;
+				height: 150px;
+				float: left;
+			}
+			#topright {
+				position: relative;
+				bottom: 25px;
+				left: 50px;
+				box-shadow: 10px 10px 10px;
+			}
+			#midleft {
+				position: relative;
+				bottom: 75px;
+				right: 50px;
+				box-shadow: 10px 10px 10px;
+			}
+			#bottomleft {
+				position: relative;
+				top: 50px;
+				left: 25px;
+				box-shadow: 10px 10px 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Dream Car Puzzle</h1>
+		<div id="images">
+			<div class="img-container">
+				<img src="img/row-1-column-1.jpg" alt="topleft">
+			</div>
+			<div class="img-container">
+				<img id="topright" src="img/row-1-column-2.jpg"  alt=topright>
+			</div>
+			<div class="img-container">
+				<img id="midleft" src="img/midleft.jpg" alt=midleft>
+			</div>
+			<div class="img-container">
+				<img src="img/midright.jpg" alt=midright>
+			</div>
+			<div class="img-container">
+				<img id="bottomleft" src="img/bottomleft.jpg" alt="bottomleft">
+			</div>
+			<div class="img-container">
+				<img src="img/bottomright.jpg" alt="bottomright">
+			</div>
+			<div class="clearfloat"></div>
+		</div>
+	</body>
+</html>
