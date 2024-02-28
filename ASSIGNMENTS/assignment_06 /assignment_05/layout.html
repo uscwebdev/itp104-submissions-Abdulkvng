@@ -17,7 +17,39 @@
 	font-weight: normal;
 	color: darkblue
 }
+#nav-wrapper {
+	width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+
+#nav-wrapper li:hover, #nav-wrapper #active-nav {
+	background-color: white;
+  color: black;
+}
+#nav-wrapper ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+#nav-wrapper li {
+	background-color: lightblue;
+	width: auto;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+#nav-wrapper ul ul {
+	position: absolute;
+	left: 0px;
+	top: 34px;
+	display: none;
+	z-index: 1;
+}
+#nav-wrapper li:hover > ul {
+	display: block;
+}
 		#right {
 			background-color: white;
 			width: 650px;
