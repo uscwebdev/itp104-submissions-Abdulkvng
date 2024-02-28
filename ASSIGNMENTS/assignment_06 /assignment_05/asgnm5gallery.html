@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+/* css */
+h1{
+    text-align: center;
+    color: white;
+}
+#footer {
+    background-color:rgb(70, 101, 63) ;
+    text-align:center;
+	line-height:40px;
+margin-top: auto;
+}
+#header{
+background-image: url("img/photo-1567346495660-baf9ca9d661a.avif");
+
+text-align: center;
+line-height: 450px;
+text-shadow: 0px 0px 10px #000; }
+.thumbnail {
+			width: 250px;
+			height: auto;
+			margin: 5px;
+			opacity: 0.6;
+		}
+		.thumbnail:hover{
+			opacity: 1.0;}
+            #gallery {
+			display: flex;
+			align-items: flex-start;
+		}
+
+
+        .thumbnail + p{
+			text-align: center;
+/* opacity: 0.0; */
+visibility: hidden;
+		}
+        
+        img{
+
+            width: 200px;
+            height: 200px;
+        }
+        html {
+    scroll-behavior: smooth;
+}
+
+/* #navbar > a {} */
+#navbar a {
+    text-decoration: none;
+    /* background-color: #FC0; */
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+
+    display: block;
+    color: #777;
+    border-bottom: 2px solid #FFF;
+}
+
+#navbar a:hover, #navbar #selected-nav {
+    background-color: lightblue;
+    border-bottom: 2px solid black;
+    color: black;
+}
+#wrapper {
+			display: flex;
+			justify-content: center;
+			/* text-align: center; */
+			/* margin-right: auto;
+			margin-left: auto;
+			width: 500px; */
+
+		}
+#navbar {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 5px #CCC;
+}
+		.thumbnail:hover +p{
+
+/* opacity: 1;	 */
+visibility: visible;	
+}
+    </style>
+<title> Simple Photo Gallery | ITP 104</title>
+
+</head>
+
+<body>
+    <div id="header">
+<h1>  Photo Gallery ( My Dream Cars) </h1>
+</div>
+<div id="navbar">
+    <a href="layout.html">Home</a>
+    <a id="selected-nav" href="asgnm5gallery.html">Gallery</a>
+</div>
+
+<div id="wrapper">
+<div id="gallery">
+    <div class="img-container">
+    <img class="thumbnail" src="img/images.jpeg" alt="Koenigsegg Jesko Absoliut ">
+<p ><b>Koenigsegg Jesko:</b> The Jesko has a twin-turbocharged V8 engine, which has the world's lightest V8 crankshaft. </p>
+<img class="thumbnail" src="img/photo-1516298252535-cf2ac5147f9b.avif" alt="Mclaren F1 ">
+    <p> McLaren F1: The McLaren F1 is a supercar that McLaren claims is the greatest ever built.</p>
+</div>
+<div id="gallery">
+    <div class="img-container">
+
+    <img class="thumbnail" src="img/Gemera_02.webp" alt="Koenigsegg Gemera">
+    <p> Koenigsegg Gemera: Four-seater supercar with a long, sleek silhouette and an iconic Koenigsegg aesthetic</p>
+
+    
+    
+    <img class="thumbnail" src="img/photo-1584902645120-f86567d892b6.avif" alt=" Bugatti Veyron">
+    <p>Bugatti Veyron: The Veyron has a top speed of 253 mph, 1,001 horsepower, and all-wheel drive.</p>
+    <img class="thumbnail" src="img/lamburus.avif" alt=" Lamborghini Urus">
+    <p>Lamborghini Urus: The Lamborghini Urus is a super sport utility vehicle (SUV) with a front-engine, all-wheel-drive layout.</p>
+    
+
+
+
+
+</div>
+</div>
+<div class="img-container">
+
+    <img class="thumbnail" src="img/1cdeacf0-f61a-11eb-bbff-a4926822c0e1.jpeg" alt="Pagani">
+    <p>Pagani Huayra: The Huayra has a top speed of about 238 mph and can accelerate from 0 to 60 mph in 2.8 seconds.</p>
+    <img class="thumbnail" src="img/2022-MCLAREN-Artura-exterior-1.jpg" alt="Mclaren arturo">
+    <p>McLaren Artura: The McLaren Artura is a hybrid electric sports car produced by McLaren Automotive since 2022</p>
+    <img class="thumbnail" src="img/photo-1567346495660-baf9ca9d661a.avif" alt="Lamborghini">
+    <p> Lamborghini Aventador: With a raucous 769-hp V-12 engine and an exotic exterior, the 2022 Lamborghini Aventador is the definition of a hyper car.</p>
+</div>
+
+</div>
+<div id="footer">
+    University of Southern California &copy; 2018	
+    </div> <!-- #footer -->
+
+</body>
+</html>
