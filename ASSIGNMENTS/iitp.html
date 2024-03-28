@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#container {
+	border: 1px solid black;
+	background-color: yellow;
+	width: 400px;
+
+}
+#container::after {
+    content: "";
+    display: table;
+    clear: both;}
+
+#nested {
+	border: 1px solid black;
+	background-color: lightblue;
+	width: 200px;
+	float: right;
+
+
+    
+}
+#small {
+  display: none; 
+}
+
+#big:hover #small {
+  display: block; }
+  .container {
+  display: flex;
+}
+
+.left-column, .right-column {
+  width: 200px;
+}
+
+.left-column {
+  background-color: lightblue;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-top {
+  background-color: yellow;
+}
+
+.right-left {
+  background-color: lightgreen;}
+</style>
+</head>
+
+<body>
+<!-- <div id="container">
+	<div id="nested">
+		Ut nulla ligula...
+        Ut nulla ligula...
+		Ut nulla ligula...
+        Ut nulla ligula...
+		Ut nulla ligula...
+		Ut nulla ligula...
+		Ut nulla ligula...
+
+		Ut nulla ligula...
+
+	</div>
+
+	Lorem ipsum... 
+    Lorem ipsum... 
+	Lorem ipsum... 
+    Lorem ipsum... 
+    Lorem ipsum... 
+    Lorem ipsum... 
+    Lorem ipsum... 
+
+	Lorem ipsum... 
+
+
+	<div id="target"></div>
+</div> -->
+
+<!-- <p>Study Resources:</p>
+<ul>
+    <li>Slides </li>
+    <li>Code </li>
+    <ul>
+      <li>Lecture Files</li>
+      <li>Submissions</li>
+      <ul>
+        <li>Assignments</li>
+        <li>Labs</li>
+      </ul>
+    </ul>
+  </ul> -->
+<!-- Proficiency in Web Development:
+  <form action="submit.html" >
+    <label>
+      <input type="radio" name="level" value="advanced">
+      Advanced
+    </label><br>
+    <label>
+      <input type="radio" name="level" value="moderate">
+      Moderate
+    </label><br>
+    <label>
+      <input type="radio" name="level" value="introductory">
+      Introductory
+    </label><br>
+    <input type="submit" value="Submit">
+  </form> -->
+
+  <!-- <div id="big">
+	Big Box
+	<div id="small">
+		Small Box
+	</div>
+</div> -->
+
+<div class="container">
+    <div class="left-column">Left</div>
+    <div class="right-column">
+      <div class="right-top">Right-Top</div>
+      <div class="right-left">Right-Left</div>
+    </div>
+  </div>
+
+</body>
+
+</html>

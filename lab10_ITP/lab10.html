@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lab 10 | ITP 104</title>
+    <style>
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-container img:nth-child(1) {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.image-container img:nth-child(2) {
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.image-container img:nth-child(3) {
+  top: 40px;
+  left: 40px;
+  z-index: 1;
+}
+
+.image-container:hover img {
+  transform: translate(0, 0);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+          <img src="image1.jpg" alt="Image 1">
+          <img src="image2.jpg" alt="Image 2">
+          <img src="image3.jpg" alt="Image 3">
+        </div>
+      </div>
+</body>
+
+</html>
