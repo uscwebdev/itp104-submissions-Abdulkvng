@@ -51,7 +51,11 @@
       font-size: 1.5em;
     }
     p {
+      color: blue;
       margin-bottom: 20px;
+    }
+    #p2 {
+      float: left;
     }
     /* Footer styles */
     footer {
@@ -61,22 +65,32 @@
       padding: 10px 0;
       position: fixed;
       bottom: 0;
-      width: 100%;}
+      width: 100%;
+    }
+    /* Sister photo styles */
+    .sister {
+      width: 350px; /* Set width to 150 pixels */
+      height: 350px; /* Ensure the photo maintains a square aspect ratio */
+      overflow: hidden; /* Hide overflowing content */
+      border: 4px solid #fff; /* Add a 4px solid border with white color */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+      transition: transform 0.3s ease; /* Add a smooth transition effect */
+      float: left; /* Float the sisters to the left */
+      margin-right: 20px; /* Add some space between sisters */
+      margin-bottom: 20px; /* Add some space between rows */
+    }
 
-      .sister {
-  width: 150px; /* Set width to 150 pixels */
-  height: 150px; /* Ensure the photo maintains a square aspect ratio */
-  object-fit: cover; /* Maintain aspect ratio and fill the container */
-  border: 4px solid #fff; /* Add a 4px solid border with white color */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-  transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
+    /* Add hover effect */
+    .sister:hover {
+      transform: scale(1.05); /* Enlarge the photo slightly on hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+    }
 
-/* Add hover effect */
-.sister:hover {
-  transform: scale(1.05); /* Enlarge the photo slightly on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
-}
+    /* Adjust image size */
+    .sister img {
+      width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -84,33 +98,29 @@
     <h1>Our Lovely Family</h1>
   </header>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="finalproj.html">Home</a>
     <a href="sisters.html">Sisters</a>
   </nav>
   <div class="container">
-    <h2>Meet Our Sisters</h2>
+    <h2>Meet My Sisters</h2>
     <div class="sister">
       <h3>Sister 1</h3>
       <img src="IMG_1546.jpeg" alt="Sister 1">
-      <p>Hadeezah is the eldest sibling and is known for her nurturing and caring nature, traits that she seamlessly translates into her profession as a dedicated nurse in Houston. With a heart full of compassion and a relentless drive to make a difference in people's lives, she excels in her career, providing comfort and healing to those in need. Outside of work, Hadeezah is passionate about holistic wellness and often spends her free time volunteering at local health clinics, advocating for preventive care, and organizing community health awareness campaigns.</p>
     </div>
+    <p>Hadeezah is the eldest sibling and is known for her nurturing and caring nature, traits that she seamlessly translates into her profession as a dedicated nurse in Houston. With a heart full of compassion and a relentless drive to make a difference in people's lives, she excels in her career, providing comfort and healing to those in need. Outside of work, Hadeezah is passionate about holistic wellness and often spends her free time volunteering at local health clinics, advocating for preventive care, and organizing community health awareness campaigns.</p>
+
     <div class="sister">
       <h3>Sister 2</h3>
-      <img src="IMG_8063.jpg" alt="Sister 2">
-      <p>Rabiat is the second sibling, a determined and intellectually curious individual who is currently pursuing her passion for technology by studying computer engineering at the University of Texas San Antonio. With a sharp mind and a knack for problem-solving, she immerses herself in the world of algorithms and coding languages, constantly pushing the boundaries of innovation. In addition to her academic pursuits, Rabiat is an avid advocate for diversity and inclusion in STEM fields, actively participating in student organizations and mentoring programs to empower underrepresented minorities in technology.</p>
+      <img src="2023-04-21 10:42:08.933.jpeg" alt="Sister 2">
     </div>
+    <p id="p2">Rabiat is the second sibling, a determined and intellectually curious individual who is currently pursuing her passion for technology by studying computer engineering at the University of Texas San Antonio. With a sharp mind and a knack for problem-solving, she immerses herself in the world of algorithms and coding languages, constantly pushing the boundaries of innovation. In addition to her academic pursuits, Rabiat is an avid advocate for diversity and inclusion in STEM fields, actively participating in student organizations and mentoring programs to empower underrepresented minorities in technology.</p2>
+
     <div class="sister">
       <h3>Sister 3</h3>
       <img src="IMG_2897.jpg" alt="Sister 3">
-      <p>Azeemah, the youngest sibling, is a bright and determined student who is excelling academically at both Alief Early College High School and Houston Community College. With a voracious appetite for knowledge and a thirst for academic excellence, she is currently working towards earning her associate's degree in science. Azeemah is known for her insatiable curiosity and passion for exploration, often immersing herself in various extracurricular activities ranging from robotics clubs to environmental conservation projects. With boundless energy and a relentless drive for success, she dreams of pursuing a career in the field of biomedical research, where she hopes to make groundbreaking discoveries that will positively impact humanity.
-
-
-
-
-
-
-      </p>
     </div>
+    <p>Azeemah, the youngest sibling, is a bright and determined student who is excelling academically at both Alief Early College High School and Houston Community College. With a voracious appetite for knowledge and a thirst for academic excellence, she is currently working towards earning her associate's degree in science. Azeemah is known for her insatiable curiosity and passion for exploration, often immersing herself in various extracurricular activities ranging from robotics clubs to environmental conservation projects. With boundless energy and a relentless drive for success, she dreams of pursuing a career in the field of biomedical research, where she hopes to make groundbreaking discoveries that will positively impact humanity.</p>
+
   </div>
   <footer>
     <p>&copy; 2024 Our Lovely Family</p>
