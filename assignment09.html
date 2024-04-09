@@ -63,12 +63,20 @@
       bottom: 0;
       width: 100%;}
 
-  .sister{
-        width: 200px; /* Set width to 200 pixels */
-        height: 200px;
+      .sister {
+  width: 150px; /* Set width to 150 pixels */
+  height: 150px; /* Ensure the photo maintains a square aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  border: 4px solid #fff; /* Add a 4px solid border with white color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
 
-      }
-    
+/* Add hover effect */
+.sister:hover {
+  transform: scale(1.05); /* Enlarge the photo slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
   </style>
 </head>
 <body>
