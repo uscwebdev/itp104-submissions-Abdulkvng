@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* css */
+    h1 {
+      text-align: center;
+      color: darkblue;
+    }
+
+    .thumbnail {
+      width: 250px;
+      height: auto;
+      margin: 20px;
+      opacity: 0.6;
+      border: none;
+    }
+
+    .thumbnail.active {
+      border: 2px solid blue;
+    }
+
+    .thumbnail:hover {
+      opacity: 1.0;
+    }
+
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .photo-gallery > * {
+      flex: 0 0 33.333%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .caption {
+      text-align: center;
+      visibility: hidden;
+    }
+
+    .thumbnail:hover + .caption {
+      visibility: visible;
+    }
+  </style>
+  <title>Simple Photo Gallery | ITP 104</title>
+</head>
+<body>
+  <h1>Photo Gallery (My Dream Cars)</h1>
+  <div class="photo-gallery">
+    <div>
+      <img src="img/images.jpeg" class="thumbnail" alt="Koenigsegg Jesko Absoliut">
+      <p class="caption"><b>Koenigsegg Jesko:</b> The Jesko has a twin-turbocharged V8 engine, which has the world's lightest V8 crankshaft.</p>
+    </div>
+    <div>
+      <img src="img/photo-1516298252535-cf2ac5147f9b.avif" class="thumbnail" alt="Mclaren F1">
+      <p class="caption">McLaren F1: The McLaren F1 is a supercar that McLaren claims is the greatest ever built.</p>
+    </div>
+    <div>
+      <img src="img/Gemera_02.webp" class="thumbnail" alt="Koenigsegg Gemera">
+      <p class="caption">Koenigsegg Gemera: Four-seater supercar with a long, sleek silhouette and an iconic Koenigsegg aesthetic</p>
+    </div>
+    <div>
+      <img src="img/photo-1584902645120-f86567d892b6.avif" class="thumbnail" alt="Bugatti Veyron">
+      <p class="caption">Bugatti Veyron: The Veyron has a top speed of 253 mph, 1,001 horsepower, and all-wheel drive.</p>
+    </div>
+    <div>
+      <img src="img/lamburus.avif" class="thumbnail" alt="Lamborghini Urus">
+      <p class="caption">Lamborghini Urus: The Lamborghini Urus is a super sport utility vehicle (SUV) with a front-engine, all-wheel-drive layout.</p>
+    </div>
+    <div>
+      <img src="img/1cdeacf0-f61a-11eb-bbff-a4926822c0e1.jpeg" class="thumbnail" alt="Pagani">
+      <p class="caption">Pagani Huayra: The Huayra has a top speed of about 238 mph and can accelerate from 0 to 60 mph in 2.8 seconds.</p>
+    </div>
+    <div>
+      <img src="img/2022-MCLAREN-Artura-exterior-1.jpg" class="thumbnail" alt="Mclaren arturo">
+      <p class="caption">McLaren Artura: The McLaren Artura is a hybrid electric sports car produced by McLaren Automotive since 2022</p>
+    </div>
+    <div>
+      <img src="img/photo-1567346495660-baf9ca9d661a.avif" class="thumbnail" alt="Lamborghini">
+      <p class="caption">Lamborghini Aventador: With a raucous 769-hp V-12 engine and an exotic exterior, the 2022 Lamborghini Aventador is the definition of a hyper car.</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".thumbnail").click(function() {
+        // Remove the active class from all thumbnails
+        $(".thumbnail").removeClass("active");
+
+        // Add the active class to the clicked thumbnail
+        $(this).addClass("active");
+      });
+    });
+  </script>
+</body>
+</html>
