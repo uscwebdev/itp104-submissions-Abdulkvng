@@ -1,0 +1,177 @@
+h2 { color: darkblue}
+
+
+
+#right {
+    background-color: white;
+    width: 85%;
+    padding-left: 10px;
+    text-align: center; /* Center the content */
+}
+#header { 
+    background-image: url("wallpaper.avif");
+    color: white;
+    background-position: center;
+    text-align: center;
+    line-height: 500px;
+    text-shadow: 0px 0px 10px #000;
+}
+#footer {
+    background-color:rgb(70, 101, 63);
+    text-align:center;
+    line-height:40px;
+}
+
+#wrapper {
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+}
+
+#header { 
+    background-image: url("aibg.avif");
+    color: #00bcd4;
+    background-position: center;
+    text-align: center;
+    line-height: 500px;
+    text-shadow: 0px 0px 10px #000;
+}
+
+
+#menu {
+    overflow: hidden;
+    padding: 10px;
+    background-color: lightcyan; /* Background color */
+    text-align: center; /* Center the menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+ 
+menu a {
+text-decoration: none;
+color: #00bcd4;
+margin: 0 15px;
+transition: color 0.3s ease;
+border-bottom: 2px solid transparent;
+padding-bottom: 5px;
+}
+
+menu a:hover{
+
+    color: #00bcd4;
+    border-bottom-color: #00bcd4;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline-block; /* Display items horizontally */
+}
+
+#menu ul li a {
+    display: inline-block;
+    color: #00bcd4; /* Text color */
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding */
+    transition: color 0.3s, transform 0.3s, text-decoration 0.3s, box-shadow 0.3s; /* Transition for text color change, transformation, text decoration, and box shadow */
+}
+
+#menu ul li a:hover {
+    color: #3498db; /* Light blue text color on hover */
+    text-decoration: none; /* Remove default underline */
+    transform: scale(1.1); /* Scale transformation on hover */
+    position: relative;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+#menu ul li a:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 2px; /* 2 pixels under the text */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Underline height */
+    background-color: #3498db; /* Light blue underline color */
+}
+
+
+
+#ben {
+    width: 500px;
+    padding: 1px;
+    margin: 9px;
+    float: right;
+}
+
+#b3 {
+    width: 500px;
+    padding: 1px;
+    margin: 9px;
+    float: left;
+}
+
+#p6 {
+    width: 500px;
+    padding: 1px;
+    margin: 9px;
+    float: right;
+}
+
+h2 {
+    text-align: center;
+}
+
+#imagess {
+    text-align: center;    
+    width: 85%;
+    padding: 5%;
+}
+
+#paragraph-highlight{
+    text-align: left;
+}
+
+#paragraph-highlight2{
+    text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+    #menu ul li {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #menu ul li {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #menu ul li {
+        width: auto;
+    }
+}
+
+/* Adjustments for responsive layout */
+#wrapper {
+    padding: 0 10px; /* Adjust as needed */
+}
+
+#right {
+    width: 100%;
+}
+
+#ben,
+#b3,
+#p6 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#footer {
+    padding: 20px;
+}

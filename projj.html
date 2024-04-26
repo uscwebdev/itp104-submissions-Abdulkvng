@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Exploration Page | ITP</title>
+    <style>
+        @font-face {
+            font-family: "Orange Juice";
+            src: url("fonts/Orange Juice - Personal Use.ttf");
+        }
+      
+        
+        h2 {
+            font-family: "Orange Juice", fantasy;
+            font-weight: normal;
+            color: #2E86C1;
+        }
+        #nav-wrapper {
+            width: 1050px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #nav-wrapper li:hover, #nav-wrapper #active-nav {
+            background-color: #E5E8E8;
+            color: #2E86C1;
+        }
+        #nav-wrapper ul {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        #nav-wrapper li {
+            background-color: #D5DBDB;
+            width: auto;
+            float: left;
+            text-align: center;
+            position: relative;
+        }
+        #nav-wrapper ul ul {
+            position: absolute;
+            left: 0px;
+            top: 34px;
+            display: none;
+            z-index: 1;
+        }
+        #nav-wrapper li:hover > ul {
+            display: block;
+        }
+        #right {
+            background-color: #F5F5F5;
+            width: 650px;
+            padding-left: 10px;
+        }
+        #footer {
+            background-color: #2E86C1;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+        }
+        #wrapper {
+            background-color: #E5E8E8;
+            display: flex;
+            justify-content: center;
+        }
+        #header { 
+            background-image: url("best.webp");
+            color: white;
+            background-position: center;
+            text-align: center;
+            line-height: 500px;
+            text-shadow: 0px 0px 10px #000;
+        }
+        #ben {
+            width: 400px;
+            padding: 1px;
+            margin: 9px;
+            float: right;
+        }
+        #b3 {
+            width: 400px;
+            padding: 1px;
+            margin: 9px;
+            float: left;
+        }
+        #p6 {
+            width: 400px;
+            padding: 1px;
+            margin: 9px;
+            float: right;
+        }
+        h2 {
+            text-align: center;
+        }
+        #imagess {
+            text-align: center;
+            width: 85%;
+            padding: 5%;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        #navbar a {
+            text-decoration: none;
+            height: 50px;
+            width: 150px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+            color: #2E86C1;
+            border-bottom: 2px solid #E5E8E8;
+        }
+        .clearfloat {
+            clear: both;
+        }
+        #navbar a:hover, #navbar #selected-nav {
+            background-color: #D5DBDB;
+            border-bottom: 2px solid #2E86C1;
+            color: #2E86C1;
+        }
+        #imagess + p {
+            visibility: hidden;
+        }
+        #imagess:hover + p {
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            visibility: visible;
+        }
+		body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    background-color: #2E86C1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#navbar {
+    background-color: #E5E8E8;
+    text-align: center;
+    animation: slideDown 0.5s ease forwards;
+}
+
+#nav-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #2E86C1;
+    transition: all 0.3s ease;
+}
+
+#navbar ul li:hover a {
+    background-color: #D5DBDB;
+    color: white;
+}
+
+#navbar ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #D5DBDB;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#navbar ul li:hover ul {
+    display: block;
+}
+
+#navbar ul li ul li {
+    display: block;
+}
+
+#navbar ul li ul li a {
+    padding: 10px 20px;
+}
+
+#navbar ul li ul li a:hover {
+    background-color: #2E86C1;
+    color: white;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Exploring the World of Artificial Intelligence</h1>
+    </div>
+    
+    <div id="navbar">
+        <div id="nav-wrapper">
+            <ul>
+                <li>
+                    <a id="selected-nav" href="layout.html">Artificial Intelligence</a>
+                    <ul>
+                        <li><a href="projj.html#uno">Introduction to AI</a></li>
+                        <li><a href="projj.html#dos">Machine Learning</a></li>
+                        <li><a href="projj.html#tres">Applications of AI</a></li>
+                    </ul>
+                </li>
+                <li><a href="asgnm5gallery.html">Gallery</a></li>
+            </ul>
+            <div class="clearfloat"></div>
+        </div>
+    </div>
+    
+
+
+        <div id="right">
+
+            <h2 id="uno">Introduction to Artificial Intelligence</h2>
+            <img id="ben" src="img_assignment2/ben.webp" alt="AI">
+            <p id="paragraph-highlight">Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and mimic human actions. It encompasses a wide range of technologies, including machine learning, natural language processing, computer vision, and robotics.</p>
+            <p>AI has the potential to revolutionize industries by automating repetitive tasks, making processes more efficient, and enabling machines to learn from data and improve over time. From virtual assistants like Siri and Alexa to self-driving cars and recommendation systems, AI is already integrated into many aspects of our daily lives.</p>
+            <p>For more information, watch <a href="https://www.youtube.com/watch?v=WOfcwkqgV44&pp=ygUMYmVzdCBiZWFjaGVz" target="_blank">The Rise of Artificial Intelligence</a>.</p>
+            <hr>
+
+            <h2 id="dos">Machine Learning</h2>
+            <img id="b3" src="img_assignment2/p3.webp" alt="Machine Learning">
+            <p>Machine Learning is a subset of AI that focuses on developing algorithms that enable computers to learn from data and make predictions or decisions without being explicitly programmed. It involves training models on large datasets to recognize patterns and make inferences or predictions.</p>
+            <p>There are various types of machine learning, including supervised learning, unsupervised learning, and reinforcement learning. Supervised learning involves training models on labeled data, while unsupervised learning deals with unlabeled data to discover hidden patterns or structures. Reinforcement learning involves training models to make sequential decisions by receiving feedback from the environment.</p>
+            <hr>
+
+            <h2 id="tres">Applications of Artificial Intelligence</h2>
+            <img id="p6" src="img_assignment2/p6.webp" alt="AI Applications">
+            <p>AI is being applied across various industries, including healthcare, finance, transportation, retail, and entertainment. In healthcare, AI is used for medical imaging analysis, drug discovery, personalized treatment plans, and virtual health assistants. In finance, AI powers algorithmic trading, fraud detection, credit scoring, and customer service chatbots.</p>
+            <p>In transportation, AI is driving advancements in autonomous vehicles, traffic management systems, and predictive maintenance for infrastructure. In retail, AI is used for inventory management, demand forecasting, personalized shopping experiences, and customer service automation. In entertainment, AI is used for content recommendation, personalized marketing, and content creation.</p>
+            <p>For more information, watch <a href="https://www.youtube.com/watch?v=WOfcwkqgV44&pp=ygUMYmVzdCBiZWFjaGVz" target="_blank">Best AI Applications</a>.</p>
+        </div> <!-- #right -->
+    </div> <!-- #wrapper -->
+
+    <div id="footer">
+        University of Southern California &copy; 2018   
+    </div> <!-- #footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="  final projects.">
+		<title>Abdulrahman Sadiq | Final Project Homepage</title>
+		<link rel="stylesheet" href="main.css">
+		<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f5f5f7;
+        color: #1d1d1f;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        height: 40px;
+        width: auto;
+    }
+
+    .nav {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav li {
+        margin-left: 40px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: #1d1d1f;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+        color: #0071e3;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .hero-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-text {
+        margin-left: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .section {
+        margin-bottom: 60px;
+    }
+
+    .section h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .section p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .family-photos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .family-photo {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .family-photo img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .family-photo:hover img {
+        transform: scale(1.1);
+    }
+
+    .family-photo .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .family-photo:hover .overlay {
+        opacity: 1;
+    }
+
+    .footer {
+        background-color: #1d1d1f;
+        color: #f5f5f7;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+
+</head> 
+<body> <div class="container"> 
+    <header class="header"> 
+        <a href="ee.html">
+            <img class="logo" src="img/logo.png" alt="Logo">
+        </a> 
+        <nav> 
+            <ul class="nav">
+                 <li><a href="final_project.html">Home</a></li>
+                  <li><a href="brand.html">Family</a> <ul> 
+                    <li><a href="assignment09.html">Siblings</a></li> 
+                    <li><a href="brand.html#lola">Lolade</a></li> 
+                    <li><a href="brand.html#abdul">Abdulrahman</a></li> 
+                    <li><a href="brand.html#azee">Azeemah</a></li> 
+                </ul> 
+            </li> 
+        </ul>
+     </nav>
+ </header>
+ <main>
+    <section class="hero">
+        <img class="hero-img" src="8d8af009-f9a3-4584-91e6-9bf71f0ff275.JPG" alt="Family Photo">
+        <div class="hero-text">
+            <h1>Sadiq Family</h1>
+            <p>In our family of five, led by our resilient mother, Shakirat Igbalaye, we are a dynamic mix of ambition and determination. Hadeezah thrives as a nurse in Houston, while Rabiat studies computer engineering at the University of Texas San Antonio. Abdulrahman pursues dual degrees in computer science and business administration at the University of Southern California. Meanwhile, Azeemah is excelling at Alief Early College High School and Houston Community College, aiming for an associate's degree in science. Together, we embrace challenges with unity and a shared passion for education and growth.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Our Children</h2>
+        <div class="family-photos">
+            <a href="brand.html#hazz" class="family-photo">
+                <img src="IMG_1546.jpeg" alt="Hadeezah">
+                <div class="overlay">Hadeezah</div>
+            </a>
+            <a href="brand.html#lola" class="family-photo">
+                <img src="2023-04-21 10:42:08.933.jpeg" alt="Lolade">
+                <div class="overlay">Lolade</div>
+            </a>
+            <a href="brand.html#abdul" class="family-photo">
+                <img src="IMG_2897.jpg" alt="Abdulrahman">
+                <div class="overlay">Abdulrahman</div>
+            </a>
+            <a href="brand.html#azee" class="family-photo">
+                <img src="2cf42cef-b1db-45a2-95ef-9a8b39a2fe6c_Original.jpg" alt="Azeemah">
+                <div class="overlay">Azeemah</div>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 Abdulrahman Sadiq</p>
+</footer>
+</div>
+</body> </html>
